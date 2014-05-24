@@ -1,3 +1,5 @@
 language: node_js
-secure: "D9LRU+RxJG9c9GikYct6caoX28RQ2UVjcLmovpiw3x0J3OuQEcP8BUlBlXFOxWd5v8/sjC+Nxrhv8wL9IYu18RNd3gabpUZ/kpSYWUJUE0Bf0Lgj1yNCV9BluCvPyQs2T2qiDSOZHYuTtmsfPhPnM5XcQjHJee2D3tjiDgMxbY8="
+env:
+  global:
+    secure: "D9LRU+RxJG9c9GikYct6caoX28RQ2UVjcLmovpiw3x0J3OuQEcP8BUlBlXFOxWd5v8/sjC+Nxrhv8wL9IYu18RNd3gabpUZ/kpSYWUJUE0Bf0Lgj1yNCV9BluCvPyQs2T2qiDSOZHYuTtmsfPhPnM5XcQjHJee2D3tjiDgMxbY8="
 script: "./build.sh"
