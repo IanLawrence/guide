@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Running Standalone Docker | RapidFTR Deployment Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    
+    <link rel="prev" href="../web/failover.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3.5" data-basepath=".." data-revision="1433936814356">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    
+    
+
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >RapidFTR Deployment Guide</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/rapidftr/guide/tree/master/deploy" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="web/README.html">
+            
+                
+                    <a href="../web/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Deploying
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="web/automatedchef_with_ci.html">
+            
+                
+                    <a href="../web/automatedchef_with_ci.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Cloud (using Jenkins)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="web/chef.html">
+            
+                
+                    <a href="../web/chef.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Cloud (manually)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="web/automated_apk_with_ci.html">
+            
+                
+                    <a href="../web/automated_apk_with_ci.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Android APK to Playstore (using Jenkins)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="web/generating-installers.html">
+            
+                
+                    <a href="../web/generating-installers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Generating RapidFTR Installers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="web/generating_rapidreg_installers.html">
+            
+                
+                    <a href="../web/generating_rapidreg_installers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Generating RapidREG installers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="web/linux-netbook.html">
+            
+                
+                    <a href="../web/linux-netbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Linux NetBook
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="web/windows-netbook.html">
+            
+                
+                    <a href="../web/windows-netbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Windows NetBook
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Upgrading</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="web/upgrade_cloud_to_2.html">
+            
+                
+                    <a href="../web/upgrade_cloud_to_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Cloud to 2.0
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="web/upgrade_netbook_to_2.html">
+            
+                
+                    <a href="../web/upgrade_netbook_to_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Linux Netbook to 2.0
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="web/upgrade_android_to_2.html">
+            
+                
+                    <a href="../web/upgrade_android_to_2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Android to 2.0
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="web/maintenance.html">
+            
+                
+                    <a href="../web/maintenance.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Maintenance
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="web/troubleshooting.html">
+            
+                
+                    <a href="../web/troubleshooting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Troubleshooting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="web/ssh.html">
+            
+                
+                    <a href="../web/ssh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         SSH Setup
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="web/ssl.html">
+            
+                
+                    <a href="../web/ssl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         SSL Certificates
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="web/failover.html">
+            
+                
+                    <a href="../web/failover.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         Failover
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.5" data-path="web/docker.html">
+            
+                
+                    <a href="../web/docker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                         Running Standalone Docker
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> Old Deploys/Upgrades</span>
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="web/upgrade_to_1_1.html">
+            
+                
+                    <a href="../web/upgrade_to_1_1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Upgrading to 1.1.0
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 94.44444444444444%;min-width: 88.88888888888889%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../web/README.html" title="Deploying" class="chapter done new-chapter" data-progress="1" style="left: 5.555555555555555%;"></a>
+    
+        <a href="../web/automatedchef_with_ci.html" title="Cloud (using Jenkins)" class="chapter done " data-progress="1.1" style="left: 11.11111111111111%;"></a>
+    
+        <a href="../web/chef.html" title="Cloud (manually)" class="chapter done " data-progress="1.2" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../web/automated_apk_with_ci.html" title="Android APK to Playstore (using Jenkins)" class="chapter done " data-progress="1.3" style="left: 22.22222222222222%;"></a>
+    
+        <a href="../web/generating-installers.html" title="Generating RapidFTR Installers" class="chapter done " data-progress="1.4" style="left: 27.77777777777778%;"></a>
+    
+        <a href="../web/generating_rapidreg_installers.html" title="Generating RapidREG installers" class="chapter done " data-progress="1.5" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../web/linux-netbook.html" title="Linux NetBook" class="chapter done " data-progress="1.6" style="left: 38.888888888888886%;"></a>
+    
+        <a href="../web/windows-netbook.html" title="Windows NetBook" class="chapter done " data-progress="1.7" style="left: 44.44444444444444%;"></a>
+    
+        <a href="../web/upgrade_cloud_to_2.html" title="Cloud to 2.0" class="chapter done " data-progress="2.1" style="left: 50%;"></a>
+    
+        <a href="../web/upgrade_netbook_to_2.html" title="Linux Netbook to 2.0" class="chapter done " data-progress="2.2" style="left: 55.55555555555556%;"></a>
+    
+        <a href="../web/upgrade_android_to_2.html" title="Android to 2.0" class="chapter done " data-progress="2.3" style="left: 61.111111111111114%;"></a>
+    
+        <a href="../web/maintenance.html" title="Maintenance" class="chapter done new-chapter" data-progress="3" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../web/troubleshooting.html" title="Troubleshooting" class="chapter done " data-progress="3.1" style="left: 72.22222222222223%;"></a>
+    
+        <a href="../web/ssh.html" title="SSH Setup" class="chapter done " data-progress="3.2" style="left: 77.77777777777777%;"></a>
+    
+        <a href="../web/ssl.html" title="SSL Certificates" class="chapter done " data-progress="3.3" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../web/failover.html" title="Failover" class="chapter done " data-progress="3.4" style="left: 88.88888888888889%;"></a>
+    
+        <a href="../web/docker.html" title="Running Standalone Docker" class="chapter done " data-progress="3.5" style="left: 94.44444444444444%;"></a>
+    
+        <a href="../web/upgrade_to_1_1.html" title="Upgrading to 1.1.0" class="chapter  " data-progress="4.1" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_6">
+                    
+                        <h1 id="manual-deployment-with-docker">Manual Deployment with Docker</h1>
+<ul>
+<li>Install Docker as given in <a href="http://docs.docker.com/" target="_blank">their instructions</a></li>
+<li><p>Run:</p>
+<pre><code>  # Create a folder to store RapidFTR data
+  mkdir -p /data/rapidftr/production
+
+  # Run RapidFTR (all in one line)
+  docker run --detach \
+             --publish 80:80 \
+             --publish 443:443 \
+             --publish 6984:6984 \
+             --volume /data/rapidftr/production:/data \
+             --name rapidftr-production \
+             --tty
+             rapidftr/rapidftr:&lt;version&gt;
+  # where &lt;version&gt; can be an actual version or &quot;latest&quot;
+
+  # OPTIONAL: See the logs
+  docker logs -f rapidftr-production
+</code></pre></li>
+</ul>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../web/failover.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Failover"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-rapidftr/guide-dropdown.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-rapidftr/edit-this-page.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

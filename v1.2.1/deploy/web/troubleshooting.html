@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Troubleshooting | RapidFTR Deployment Guide</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../web/ssl.html" />
+    
+    
+    <link rel="prev" href="../web/failover.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.5" data-basepath=".." data-revision="1433936828742">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/null" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    
+    
+
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >RapidFTR Deployment Guide</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/rapidftr/guide/tree/master/deploy" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="web/README.html">
+            
+                
+                    <a href="../web/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Web
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="web/cloud.html">
+            
+                
+                    <a href="../web/cloud.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Hosted/Cloud Server
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="web/linux-netbook.html">
+            
+                
+                    <a href="../web/linux-netbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Linux NetBook
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="web/windows-netbook.html">
+            
+                
+                    <a href="../web/windows-netbook.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Windows NetBook
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="web/failover.html">
+            
+                
+                    <a href="../web/failover.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Failover
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="web/troubleshooting.html">
+            
+                
+                    <a href="../web/troubleshooting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Troubleshooting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="web/ssl.html">
+            
+                
+                    <a href="../web/ssl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         SSL Certificates
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 85.71428571428571%;min-width: 71.42857142857143%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../web/README.html" title="Web" class="chapter done new-chapter" data-progress="1" style="left: 14.285714285714286%;"></a>
+    
+        <a href="../web/cloud.html" title="Hosted/Cloud Server" class="chapter done " data-progress="1.1" style="left: 28.571428571428573%;"></a>
+    
+        <a href="../web/linux-netbook.html" title="Linux NetBook" class="chapter done " data-progress="1.2" style="left: 42.857142857142854%;"></a>
+    
+        <a href="../web/windows-netbook.html" title="Windows NetBook" class="chapter done " data-progress="1.3" style="left: 57.142857142857146%;"></a>
+    
+        <a href="../web/failover.html" title="Failover" class="chapter done " data-progress="1.4" style="left: 71.42857142857143%;"></a>
+    
+        <a href="../web/troubleshooting.html" title="Troubleshooting" class="chapter done " data-progress="1.5" style="left: 85.71428571428571%;"></a>
+    
+        <a href="../web/ssl.html" title="SSL Certificates" class="chapter  " data-progress="1.6" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_7">
+                    
+                        <h1 id="troubleshooting-production">Troubleshooting Production</h1>
+<h3 id="no-pages-are-getting-served-">No pages are getting served:</h3>
+<p>Check the application logs to see if the application is running.</p>
+<h3 id="application-is-running-but-still-no-pages-are-getting-served-">Application is running, but still no pages are getting served:</h3>
+<p>Check if the application can be started manually. Go to the folder where the application is installed and type:</p>
+<p><code>bundle exec rails server</code></p>
+<p>Then try accessing the application by visiting localhost:3000 in the browser.</p>
+<h3 id="login-page-is-getting-served-but-users-get-an-error-page-after-entering-their-username-and-password">Login page is getting served but users get an error page after entering their username and password</h3>
+<p>Then it&#39;s likely CouchDB is not running. From the server, try this.</p>
+<p><code>curl http://localhost:5984/</code></p>
+<p>You should get something like this if couch is up and running.</p>
+<p><code>{&quot;couchdb&quot;:&quot;Welcome&quot;,&quot;version&quot;:&quot;1.0.1&quot;}</code></p>
+<p>(Your version may vary.) If it&#39;s down, try starting it with this.</p>
+<p><code>sudo /etc/init.d/couchdb start</code></p>
+<h3 id="couchdb-is-up-but-things-are-still-not-working-correctly">CouchDB is up, but things are still not working correctly</h3>
+<p>You can look at the Couch logs with this command on the server.</p>
+<p><code>sudo less /var/log/couchdb/couch.log</code></p>
+<h3 id="can-view-and-register-children-but-error-page-when-searching-or-exporting">Can view and register children, but error page when searching or exporting</h3>
+<p>Then it&#39;s likely Solr is not running. From the server, try this.</p>
+<p><code>ps aux | grep java</code></p>
+<p>You should see at least one running process like:</p>
+<p><code>java -Djetty.port=... -Dsolr.data.dir=... -Dsolr.solr.home=...</code></p>
+<p>If you don&#39;t, then Solr is not running. At the same time, if you see multiple Solr process with same <code>jetty.port</code>, then that means that multiple Solr instances are running on the same port, which is also a problem. The best thing to do is to kill all these Solr processes and restart them.</p>
+<pre><code>killall java
+cd &lt;path-to-rapidftr e.g. /srv/rapid_ftr_production/current&gt;
+RAILS_ENV=production bundle exec rake sunspot:clean_start
+</code></pre><p>If there&#39;s some data issue requiring you to <strong>browse the CouchDB data</strong>, you won&#39;t be able to access Futon (the CouchDB UI) from your browser due to firewall restrictions. You can access it using ssh port forwarding. From your workstation, log into the server via ssh, adding the <code>-L</code> (dash-capital-L argument).</p>
+<p><code>ssh user@your.rapidftr.server -L 5999:localhost:5984</code></p>
+<p>After logging in, open your browser to <a href="http://localhost:5999/_utils" target="_blank">http://localhost:5999/_utils</a> and you should see the remote server&#39;s Futon.</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../web/failover.html" class="navigation navigation-prev " aria-label="Previous page: Failover"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../web/ssl.html" class="navigation navigation-next " aria-label="Next page: SSL Certificates"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-rapidftr/guide-dropdown.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-rapidftr/edit-this-page.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
