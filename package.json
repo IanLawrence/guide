@@ -1,0 +1,8 @@
+{
+  "name" : "rapidftr-guide",
+  "version" : "0.1.0",
+  "private" : true,
+  "dependencies" : {
+    "gitbook" : "~0.4.6"
+  }
+}
