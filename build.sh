@@ -5,23 +5,32 @@ if [[ $TRAVIS_PULL_REQUEST != 'false' ]]; then
   exit 1
 fi
 
-export PATH=$(npm bin):$PATH
-rm -Rf gh-pages
+echo "Reconstituting SSH key..."
+echo -n $id_rsa_{00..30} >> ~/.ssh/id_travis_base64
+base64 --decode --ignore-garbage ~/.ssh/id_travis_base64 > ~/.ssh/id_travis
+chmod 600 ~/.ssh/id_travis
+echo -e "Host github.com\n" >> ~/.ssh/config
+echo -e "\tIdentityFile ~/.ssh/id_travis\n" >> ~/.ssh/config
+echo -e "\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+echo -e "\tPasswordAuthentication no\n" >> ~/.ssh/config
 
+echo "Cloning gh-pages..."
+rm -Rf gh-pages
 git config --global user.email "travis@travis-ci.org"
 git config --global user.name "travis-ci"
-git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/rapidftr/guide.git gh-pages
-
-set -xe
+git clone --quiet --branch=gh-pages git@github.com:rapidftr/guide.git gh-pages
 cd gh-pages
 git rm -rfq *
 
+echo "Building book..."
+export PATH=$(npm bin):$PATH
 ( cd ../contributor && gitbook build -o ../gh-pages/contributor )
 ( cp ../index.html .)
 
+echo "Pushing result..."
 git add -f .
 git commit --amend -q -m "Built $TRAVIS_COMMIT"
 git push -fq origin gh-pages
 
-cd ..
-rm -Rf gh-pages
+echo "Cleaning up..."
+rm -Rf ~/.ssh/id_travis*
