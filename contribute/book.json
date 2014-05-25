@@ -1,3 +1,6 @@
 {
-    "title": "RapidFTR Contributor's Guide"
+    "title" : "RapidFTR Contributor's Guide",
+    "links" : {
+      "home" : "//github.com/rapidftr/guide"
+    }
 }
