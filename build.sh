@@ -14,9 +14,9 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/rapidftr/guid
 
 set -xe
 cd gh-pages
-git rm -rfq ./contribute
+git rm -rfq *
 
-( cd ../contribute && gitbook build -o ../gh-pages/contribute )
+( cd ../contributor && gitbook build -o ../gh-pages/contributor )
 ( cp ../index.html .)
 
 git add -f .
