@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ $TRAVIS_PULL_REQUEST != 'false' ]]; then
+  echo "Pull request, skipping..."
+  exit 1
+fi
+
 export PATH=$(npm bin):$PATH
 rm -Rf gh-pages
 
@@ -9,9 +14,12 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/rapidftr/guid
 
 set -xe
 cd gh-pages
-git rm -rf ./contribute
+git rm -rfq ./contribute
 ( cd ../contribute && gitbook build -o ../gh-pages/contribute )
 
 git add -f .
-git commit -m "Built $TRAVIS_COMMIT"
+git commit --amend -q -m "Built $TRAVIS_COMMIT"
 git push -fq origin gh-pages
+
+cd ..
+rm -Rf gh-pages
