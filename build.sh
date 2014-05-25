@@ -15,7 +15,9 @@ git clone --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/rapidftr/guid
 set -xe
 cd gh-pages
 git rm -rfq ./contribute
+
 ( cd ../contribute && gitbook build -o ../gh-pages/contribute )
+( cp ../index.html .)
 
 git add -f .
 git commit --amend -q -m "Built $TRAVIS_COMMIT"
