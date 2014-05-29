@@ -1,0 +1,15 @@
+{
+    "title" : "RapidFTR Administrator's Guide",
+    "github" : "rapidftr/guide",
+    "plugins" : [ "-mathjax", "-mixpanel" ],
+    "links" : {
+      "contribute" : "//github.com/rapidftr/guide",
+      "about" : false,
+      "issues" : false,
+      "sharing" : {
+        "google" : false,
+        "twitter" : false,
+        "facebook" : false
+      }
+    }
+}

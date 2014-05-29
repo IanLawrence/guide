@@ -25,6 +25,8 @@ git rm -rfq *
 echo "Building book..."
 export PATH=$(npm bin):$PATH
 ( cd ../contributor && gitbook build -o ../gh-pages/contributor )
+( cd ../administrator && gitbook build -o ../gh-pages/administrator )
+( cd ../user && gitbook build -o ../gh-pages/user )
 ( cp ../index.html .)
 
 echo "Pushing result..."
