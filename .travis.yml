@@ -28,6 +28,6 @@ env:
     - secure: "pEYcPeudo9MhnQuSYjkygOD0CFDqSlrpdgXxCu+Hl4xOC+XeTFVE5KPaNbhNIpNI9+pxM6NMd/A1k8RCqFIlDv/F5Tzov69OKmRmV6omqFbSnay5ZDvUvz2GypOeV8Kr1Z7VOe2w/+2WjmWfAVcEhklHr/GcQ4DPRosxkQYogyE="
     - secure: "SRivybHHdk8hx3Qe2AzIyniVdz9VJj/QD5iMSXzulyubCkb4ba86yAYbB/A6sB0ZEHZcNBWbvTwjoFc6EmY2BGAZXCIW7wN5Wdj+LmgdBKXTxHSDPawMBxrorTNR/FC/MWpv8ndBNqiLo5B7nxspzZEd0OMO62R38bFWS66VYz4="
 script:
-  - "./build.sh"
+  - "./deploy.sh"
 notifications:
   - email: false
