@@ -1,5 +1,5 @@
 {
-    "title" : "RapidFTR Contributor's Guide",
+    "title" : "RapidFTR Deployment Guide",
     "github" : "rapidftr/guide",
     "plugins" : [ "-mathjax", "-mixpanel" ],
     "links" : {
