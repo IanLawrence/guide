@@ -18,12 +18,16 @@ require(["gitbook", "jQuery"], function(gitbook, jQuery) {
 
   var $wrapper = $(
     '<div class="dropdown pull-right"></div>'
-  );
+  ).append($link).append($dropdown);
 
-  $wrapper.append($link).append($dropdown).insertBefore(".book-header h1");
+  function insertLink() {
+    var wrapper = $wrapper.clone();
+    wrapper.insertBefore(".book-header h1");
+    wrapper.find("#guide-dropdown").click(function() {
+      wrapper.find(".dropdown-menu").toggle();
+    });
+  }
 
-  $link.click(function() {
-    $dropdown.toggle();
-  });
+  gitbook.events.bind("page.change", insertLink);
 
 });
