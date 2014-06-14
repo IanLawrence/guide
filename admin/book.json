@@ -3,7 +3,7 @@
     "github" : false,
     "plugins" : [ "-mathjax", "-mixpanel", "rapidftr" ],
     "links" : {
-      "contribute" : false,
+      "contribute" : "https://github.com/rapidftr/guide/tree/master/admin",
       "about" : false,
       "issues" : false,
       "sharing" : {
