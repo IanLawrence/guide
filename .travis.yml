@@ -27,7 +27,7 @@ env:
     - secure: "6K1wetYOnWWjFyDJD87qWsoyTTN8F8AVU23Jp4RgO1iLRbWkmS3EQecg0emvvtlApczVkr0Yo8WrBRc6mkLFY0hqC3sept6Xx2O9ITx3YuBUI+b+cfZhmCUTO5Z3MkaCeQHdKW9cAggvA2+dyJ1el70kGIOPzBEd0gF1hlT18QY="
     - secure: "pEYcPeudo9MhnQuSYjkygOD0CFDqSlrpdgXxCu+Hl4xOC+XeTFVE5KPaNbhNIpNI9+pxM6NMd/A1k8RCqFIlDv/F5Tzov69OKmRmV6omqFbSnay5ZDvUvz2GypOeV8Kr1Z7VOe2w/+2WjmWfAVcEhklHr/GcQ4DPRosxkQYogyE="
     - secure: "SRivybHHdk8hx3Qe2AzIyniVdz9VJj/QD5iMSXzulyubCkb4ba86yAYbB/A6sB0ZEHZcNBWbvTwjoFc6EmY2BGAZXCIW7wN5Wdj+LmgdBKXTxHSDPawMBxrorTNR/FC/MWpv8ndBNqiLo5B7nxspzZEd0OMO62R38bFWS66VYz4="
-script:
-  - "./deploy.sh"
 notifications:
   - email: false
+install: "echo"
+script: "./deploy.sh"

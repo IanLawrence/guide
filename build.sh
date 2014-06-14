@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+npm rm -g gitbook-plugin-rapidftr
+npm link gitbook-plugin-rapidftr
 npm install
 export PATH=$(npm bin):$PATH
 

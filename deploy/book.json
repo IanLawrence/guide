@@ -1,9 +1,9 @@
 {
     "title" : "RapidFTR Deployment Guide",
-    "github" : "rapidftr/guide",
-    "plugins" : [ "-mathjax", "-mixpanel" ],
+    "github" : false,
+    "plugins" : [ "-mathjax", "-mixpanel", "rapidftr" ],
     "links" : {
-      "contribute" : "//github.com/rapidftr/guide",
+      "contribute" : false,
       "about" : false,
       "issues" : false,
       "sharing" : {

@@ -3,6 +3,7 @@
   "version" : "0.1.0",
   "private" : true,
   "dependencies" : {
-    "gitbook" : "~0.4.6"
+    "gitbook" : "~0.5.2",
+    "gitbook-plugin-rapidftr" : "0.0.1"
   }
 }
