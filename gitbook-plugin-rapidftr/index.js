@@ -2,7 +2,8 @@ module.exports = {
   book: {
     assets: './book',
     js: [
-      'rapidftr.js'
+      'guide-dropdown.js',
+      'edit-this-page.js'
     ]
   }
 }
