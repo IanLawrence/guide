@@ -1,4 +1,4 @@
-# RapidFTR Deployment Guide
+# RapidFTR Integration Guide
 
 This guide covers the APIs used to integrate with RapidFTR.
 
