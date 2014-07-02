@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
-npm rm -g gitbook-plugin-rapidftr
-npm link gitbook-plugin-rapidftr
-npm install
+set -xe
+
 export PATH=$(npm bin):$PATH
 
 mkdir -p gh-pages

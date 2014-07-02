@@ -5,5 +5,8 @@
   "dependencies" : {
     "gitbook" : "~0.5.2",
     "gitbook-plugin-rapidftr" : "0.0.1"
+  },
+  "scripts" : {
+    "preinstall" : "npm install ./gitbook-plugin-rapidftr"
   }
 }
