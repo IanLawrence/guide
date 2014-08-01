@@ -18,11 +18,8 @@
 * Clone the [rapidftr-infrastructure](//github.com/rapidftr/rapidftr-infrastructure) repository, and checkout to the release that you want
 
         git clone https://github.com/rapidftr/rapidftr-infrastructure.git
-        git checkout v1.2.1 # (or don't do this, and use the latest master)
-
-* Run `bundle install`
-* Run Knife Solo to provision the target server:
-
+        git checkout v1.2.1 # whichever version you want, or skip this to use master
+        bundle install
         bundle exec knife solo bootstrap <username>@<target-server>
         # enter password to the target server when asked
 
