@@ -1,4 +1,4 @@
-# Deploying to a Hosted/Cloud Server
+# Automated Deployment to a Hosted/Cloud Server
 
 ## Requirements
 
