@@ -27,4 +27,4 @@
         # enter password to the target server when asked
 
 * Your server is up and running. Go to `https://<target-server>` to check the results.
-* To change the SSL certificates, or to do backups, check [[Managing the Server]]
+* To change the SSL certificates, or to do backups, check [Maintenance](maintenance.md)
