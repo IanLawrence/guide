@@ -2,7 +2,7 @@
 
 * [Web](web/README.md)
   * [Manual Deployment with Docker](web/manual.md)
-  * [Automated Deployment with Chef](web/cloud.md)
+  * [Automated Deployment with Chef](web/chef.md)
   * [Linux NetBook](web/linux-netbook.md)
   * [Windows NetBook](web/windows-netbook.md)
   * [Failover](web/failover.md)
