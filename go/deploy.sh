@@ -21,7 +21,7 @@ go/build.sh
 
 echo "Pushing result..."
 cd gh-pages
-git add -f .
+git add --all --force .
 git commit --amend --allow-empty -q -m "Built $SNAP_COMMIT_SHORT"
 git push -fq origin gh-pages
 
