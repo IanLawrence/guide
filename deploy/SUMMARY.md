@@ -8,5 +8,5 @@
   * [Failover](web/failover.md)
   * [Troubleshooting](web/troubleshooting.md)
   * [SSL Certificates](web/ssl.md)
-  * [Maintenance](web/managing.md)
+  * [Maintenance](web/maintenance.md)
  
