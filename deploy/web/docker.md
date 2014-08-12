@@ -3,9 +3,6 @@
 * Install Docker as given in [their instructions](http://docs.docker.com/)
 * Run:
 
-        # Pull RapidFTR image
-        docker pull rapidftr/rapidftr:latest
-
         # Create a folder to store RapidFTR data
         mkdir -p /data/rapidftr/production
         
@@ -16,7 +13,9 @@
                    --publish 6984:6984 \
                    --volume /data/rapidftr/production:/data \
                    --name rapidftr-production \
-                   --tty rapidftr/rapidftr:latest
+                   --tty 
+                   rapidftr/rapidftr:<version>
+        # where <version> can be an actual version or "latest"
 
-        # See the logs
+        # OPTIONAL: See the logs
         docker logs -f rapidftr-production
