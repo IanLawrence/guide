@@ -2,25 +2,21 @@
 
 ## Software Requirements
 
-* Ubuntu 12.04 LTS Desktop or Server
-* LXC (LinuX Containers). Install it using:
-```
-sudo apt-get install lxc
-```
+* 64-bit Ubuntu 14.04.1 LTS Desktop or Server
 
-## RapidFTR Ubuntu Installer
+## Installation Procedure
 
-* Get the Ubuntu installer from Downloads page
-* Click on the downloaded file to start installing
-* Or if you are on the server and you don't have a GUI, run:
+* Get the RapidFTR Web installer from the [Downloads](https://bit.ly/rapidftr) page. Alternatively use [this direct link](https://bit.ly/rapidftr-server) for the current development version (useful for commandline-installs)
+* Extract the downloaded archive
+* Start the installation by running:
+
 ```
-sudo dpkg -i <downloaded-deb-file>
+sudo ./install.sh
 ```
 
 ## Offline Installation
 
-* Software packages in Ubuntu are managed using `apt-get`, which requires an internet connection to run
-* RapidFTR Installer can be copied and run offline in any machine, provided the Software Requirements are met in the machine
+* The RapidFTR installer is able to automatically detect the connectivity status of the netbook and adjust appropriately. Performing an offline installation can therefore be performed in the same way as noted above.
 
 ## Hardware Requirements
 
