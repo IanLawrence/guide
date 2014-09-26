@@ -13,6 +13,7 @@
 ```
 sudo ./install.sh
 ```
+*On completion, the installer automatically starts the RapidFTR server. To access the RapidFTR server, simply open up a web browser and navigate to `localhost`*
 
 ## Offline Installation
 
