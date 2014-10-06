@@ -16,5 +16,7 @@
        * [Custom Forms](system_administration/custom_forms.md)
            * [Create a New Form Section](system_administration/create_a_new_form_section.md)
            * [Adding Fields to a Form](system_administration/add_a_new_field_to_a_form.md)
+   * [Editing Forms](system_administration/editing_forms.md)
+       * [Making Enquiry Fields Matchable](system_administration/making_enquiry_fields_matchable.md)
 * [View System Logs](system_logs/README.md)
 

@@ -1,4 +1,4 @@
-# Addding Fields to a Form
+# Adding Fields to a Form
 
 1. Log in as Administrator
 2. Click the Forms tab at the top menu.
