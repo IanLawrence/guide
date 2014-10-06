@@ -1,5 +1,8 @@
 # Making Enquiry Fields Matchable
 
+This functionality allows you to choose which fields on an Enquiry will
+be used to search for potentially matching Children.
+
 1. Log in as Administrator
 2. Click the Forms tab at the top menu
 3. Click Enquiries from list
