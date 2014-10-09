@@ -1,4 +1,4 @@
-# Automated/Chef to a hosted/cloud server with Jenkins CI
+    # Automated/Chef to a hosted/cloud server with Jenkins CI
 This section describes how to setup a new hosted/cloud server using Jenkins CI as the deployment agent.
 
 The assumption here is that the CI is already setup and accessible at https://ci.rapidftr.com
