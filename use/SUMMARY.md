@@ -25,6 +25,7 @@
    * [Searching](mobile_users_guide/searching.md)
    * [Synchronizing](mobile_users_guide/synchronizing.md)
    * [Logging Out](mobile_users_guide/logging_out.md)
+   * [Viewing potential matches](mobile_users_guide/viewing_potential_matches.md)
 * [Web User's Guide](web_users_guide/README.md)
    * [System Overview](web_users_guide/system_overview.md)
        * [Application menu](web_users_guide/application_menu.md)
