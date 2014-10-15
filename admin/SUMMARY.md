@@ -18,5 +18,7 @@
            * [Adding Fields to a Form](system_administration/add_a_new_field_to_a_form.md)
    * [Editing Forms](system_administration/editing_forms.md)
        * [Making Enquiry Fields Matchable](system_administration/making_enquiry_fields_matchable.md)
+   * [System Variables](system_administration/changing_the_score_threshold.md)
+       * [Changing the score threshold](file_name_should_be_unique.md)
 * [View System Logs](system_logs/README.md)
 

@@ -5,7 +5,7 @@
 
         # Create a folder to store RapidFTR data
         mkdir -p /data/rapidftr/production
-        
+
         # Run RapidFTR (all in one line)
         docker run --detach \
                    --publish 80:80 \
@@ -13,7 +13,7 @@
                    --publish 6984:6984 \
                    --volume /data/rapidftr/production:/data \
                    --name rapidftr-production \
-                   --tty 
+                   --tty
                    rapidftr/rapidftr:<version>
         # where <version> can be an actual version or "latest"
 

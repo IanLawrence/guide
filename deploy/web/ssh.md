@@ -13,7 +13,7 @@ For password-less secure SSH - we need a public/private SSH key. If you have use
     $ ls               # check if the keys are generated
     my_server          # this is the private key
     my_server.pub      # this is the public key
-    
+
     # Now that the keys are generated, copy them to the server using your username/password:
     ssh-copy-id -i my_server <username>@<server.com>
     password:          # enter your password when asked
@@ -21,7 +21,7 @@ For password-less secure SSH - we need a public/private SSH key. If you have use
 
     # Now check if you can login without a password:
     ssh -i my_server <username>@<server.com>
-    
+
     # You should be logged in without asking for any password
 
 The `my_server` private key file is now what you need to login to the server over SSH without any password. Use this wherever a private key is needed (e.g. the CI).

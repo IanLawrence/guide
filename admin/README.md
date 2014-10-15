@@ -2,4 +2,4 @@
 
 Version 2.0
 
-![](RapidFTR-Cover-Picture.png)
+![](images/RapidFTR-Cover-Picture.png)
