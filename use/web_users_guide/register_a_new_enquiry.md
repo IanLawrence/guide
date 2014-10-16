@@ -7,3 +7,7 @@ OR
 On the home page, click on the link "Register New Enquiry" in the quick start menu.
 
 ![](../assets/images/web-register-new-enquiry.png)
+
+The new enquiry page is loaded, it contains different form sections which can be filled if necessary.
+
+![](../assets/images/web-enquiry-form-sections.png)

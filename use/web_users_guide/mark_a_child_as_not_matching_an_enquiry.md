@@ -1,4 +1,6 @@
-# Mark a child as "Not Matching" an enquiry
+# Mark a child/enquiry as "Not Matching"
+
+This functionality can be used to either mark a child as not matching an enquiry or an enquiry not matching a child. Here we will use an example of a child being marked as not a match, but the same can be applied to the enquiry.
 
 To mark a child record as "Not Matching", navigate to the list of matches to the enquiry.
 
