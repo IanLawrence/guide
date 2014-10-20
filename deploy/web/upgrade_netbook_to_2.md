@@ -10,7 +10,7 @@ file /sbin/init
 If your machine is a 64-bit machine, this will return something like "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.15, stripped"
 
 ## Upgrading
-The easiest way to upgrade the netbook is to use two computers.  Your computer, the host, will update and deploy code onto the netbook.  You will need the netbook's IP address and login info (use it to replace <netbook_ip> and <netbook_login> below), and you will need to be on the same network/wifi as the netbook
+The easiest way to upgrade the netbook is to use two computers.  Your computer, the host, will update and deploy code onto the netbook.  You will need the netbook's IP address and login info (use it to replace \<netbook_ip\> and \<netbook_login\> below), and you will need to be on the same network/wifi as the netbook
 * On the netbook (you could ssh into it), stop and backup the current app:
 * Stop the current app:
 ```

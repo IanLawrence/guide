@@ -3,6 +3,5 @@
 The Android upgrade process is simple.
 
 * Uninstall any previous versions.
-* Download the newest APK from the Playstore or from
-http://bitly.com/rapidftr.
+* Download the newest APK from the Playstore or from http://bitly.com/rapidftr.
 * Install the APK you just downloaded.

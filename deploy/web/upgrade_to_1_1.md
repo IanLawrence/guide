@@ -66,6 +66,7 @@ sudo reboot
 ```
 * Copy a certificate and key to /etc/nginx/ssl
 * Add the right ssl cert/key location to /etc/nginx/nginx.conf
+* Start nginx again:
 ```
   sudo nginx -c /etc/nginx/nginx.conf
 ```
