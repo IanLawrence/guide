@@ -15,6 +15,8 @@ The easiest way to upgrade the netbook is to use two computers.  Your computer, 
 ```
 sudo pkill nginx
 sudo pkill Passenger
+sudo pkill couchdb
+sudo pkill solr
 rm /etc/init.d/nginx
 rm /etc/init.d/couchdb
 mkdir ~/couch_bkp
@@ -23,7 +25,8 @@ sudo mkdir -p /data/production/couchdb/
 sudo cp -r ~/couch_bkp/1.3.1/.* /data/production/couchdb/
 sudo chown -R couchdb:couchdb /data/production/couchdb
 ```
-
+* Double check that solr, couchdb, nginx, and Passenger are all turned off! Otherwise docker can not listen to the appropriate ports.
+** You may need to perform "sudo apt-get remove" to fully turn off couchdb.
 * On your machine, the host, get the updated code.
 ```
 cd /tmp
