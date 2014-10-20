@@ -57,6 +57,7 @@ sudo reboot
 ```
 * Within a minute or two, you should be able to access the site through
 your browser
+* You may need to restart nginx yourself: sudo nginx -c /etc/nginx/nginx.conf
 
 ## Troubleshooting
 * If you get an "Unauthorized" error when the cap task is setting up couchdb, make sure the rapidftr/rapidftr user has been created: RAILS_ENV=production rake db:create_couch_sysadmin 

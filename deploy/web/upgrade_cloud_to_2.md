@@ -26,3 +26,5 @@ sudo chown -R couchdb:couchdb /data/production/couchdb
 * Upgrade by following instructions in [the guide](automatedchef_with_ci.md) for the server
 
 Note, this won't setup enquiry form sections, so you will need to log in as an admin and set up the enquiry form sections before you can create new enquiries.
+
+Ensure you have added the correct certificate and key for the updated cloud instance to /data/production/ssl.

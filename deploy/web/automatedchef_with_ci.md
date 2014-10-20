@@ -27,8 +27,14 @@ Before we can deploy RapidFTR to the target server, we need to prepare it for CI
 1. The short approach is to clone an existing job i.e **DeployMasterToUAT**
     1. Log into the CI with the credentials provided by the administrator
     2. Click on create **New Item**
-    3. Enter the Item name and select copy existing item and enter the name of the Job/item you would like to clone.
+    3. Enter the Item name and select copy existing item and enter the name of the Job/item you would like to clone (e.g **DeployMasterToUAT***)
     4. Edit the cloned item and configure it to match you deployment needs.
+          * In particular, select the "Execute shell" step and enter the shell commands to run.
+                #!/bin/bash -le
+                cd infrastructure
+                bundle install
+                echo '{"run_list":["role[production]"]}' > nodes/<ipaddress_or_domainname>.json
+                bundle exec knife solo bootstrap root@<ipaddress_or_domainname> --no-host-key-verify --clean-up
 2. The longer approach is to create a new job from scratch
     1. Log into the ci with the credentials provided by the administrator and
     2. Click on create **New Item**
@@ -56,4 +62,5 @@ Before we can deploy RapidFTR to the target server, we need to prepare it for CI
             * Specify the maximum number of successive failed builds to 2. - If the build fails twice, don't attempt a retry.
         7. when done with the configuration, click the "Apply" button to save the changes and click the "Build Now" button to start the build process.
 
-
+## SSL Certificates
+You will now need to install the correct certificate and key for the new server, otherwise syncing can fail.  Copy these from another production server into /data/production/ssl.  They must be named certificate.crt and certificate.key
