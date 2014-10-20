@@ -26,6 +26,8 @@ default-jdk nginx-core libcurl4-openssl-dev
   sudo chown rapidftr:rapidftr /etc/nginx
   sudo mkdir /etc/nginx/conf
   sudo chown rapidftr:rapidftr /etc/nginx/conf
+  sudo mkdir /etc/nginx/ssl
+  sudo chown rapidftr:rapidftr /etc/nginx/ssl
 ```
 * Install nodejs - Create the node_install.sh shell script, with the contents below first.
 ```
@@ -55,9 +57,19 @@ sudo reboot
   bundle install
   bundle exec cap deploy -S branch=release-1.1.0 -S deploy_server=<ip_address> -S deploy_user=rapidftr -S http_port=80 -S https_port=443 -S solr_port=8983 -S nginx_site_conf=/etc/nginx/conf -S couchdb_username=rapidftr -S couchdb_password=rapidftr -S server_name=localhost
 ```
-* Within a minute or two, you should be able to access the site through
-your browser
-* You may need to restart nginx yourself: sudo nginx -c /etc/nginx/nginx.conf
+* Within a minute or two, you should be able to access the site through your browser.  If not, you may need to setup nginx yourself: 
+```
+  sudo pkill nginx
+  sudo pkill Passenger
+  sudo cp /etc/nginx/conf/production_80.conf /etc/nginx/sites-enabled/
+  sudo rm /etc/nginx/conf/default
+```
+* Copy a certificate and key to /etc/nginx/ssl
+* Add the right ssl cert/key location to /etc/nginx/nginx.conf
+```
+  sudo nginx -c /etc/nginx/nginx.conf
+```
+
 
 ## Troubleshooting
 * If you get an "Unauthorized" error when the cap task is setting up couchdb, make sure the rapidftr/rapidftr user has been created: RAILS_ENV=production rake db:create_couch_sysadmin 
