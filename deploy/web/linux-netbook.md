@@ -17,7 +17,7 @@ To install RapidFTR, you must download the RapidFTR Installer, extract the conte
 
     *The **RapidFTR-dev** folder is extracted to the Ubuntu Desktop.*
 
-* Open a Terminal window
+* Open a [Terminal](http://askubuntu.com/questions/38162/what-is-a-terminal-and-how-do-i-open-and-use-it) window
 * In the Terminal, run this command to navigate to the *RapidFTR-dev* folder:
 
     `cd Desktop/RapidFTR-dev/`
