@@ -1,11 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Changing System Settings](system_settings/README.md)
-   * [Changing Language](system_settings/changing_language.md)
-   * [Highlighted Fields](system_settings/highlighted_fields.md)
-       * [Children](system_settings/children.md)
-       * [Enquiries](system_settings/enquiries.md)
+* [Initial Setup](initial_setup/README.md)
+   * [First Time Login](initial_setup/first_time_login.md)
 * [System Administration](system_administration/README.md)
    * [User and Role Administration](system_administration/user_and_role_administration.md)
        * [Create a Role](system_administration/create_a_role.md)
@@ -20,5 +17,9 @@
        * [Making Enquiry Fields Matchable](system_administration/making_enquiry_fields_matchable.md)
    * [System Variables](system_administration/changing_the_score_threshold.md)
        * [Changing the score threshold](file_name_should_be_unique.md)
-* [View System Logs](system_logs/README.md)
-
+* [Changing System Settings](system_settings/README.md)
+   * [Changing Language](system_settings/changing_language.md)
+   * [Highlighted Fields](system_settings/highlighted_fields.md)
+       * [Children](system_settings/children.md)
+       * [Enquiries](system_settings/enquiries.md)
+* [Viewing System Logs](system_logs/README.md)
