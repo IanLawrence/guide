@@ -24,4 +24,4 @@ The default credentials for the RapidFTR Administrator account are:
 ** *password* **: rapidftr
 
 
-After logging in for the first time as a RapidFTR Administrator, you should proceed to set up [roles](system_administration/create_a_role.md), [users](system_administration/create_a_user.md) and [forms](system_administration/setting_up_forms.md) for your instance.
+After logging in for the first time as a RapidFTR Administrator, you should proceed to set up roles, users and forms for your instance.
