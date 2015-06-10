@@ -5,7 +5,8 @@
    * [Cloud (using Jenkins)](web/automatedchef_with_ci.md)
    * [Cloud (manually)](web/chef.md)
    * [Android APK to Playstore (using Jenkins)](web/automated_apk_with_ci.md)
-   * [Generating Installers](web/generating-installers.md)
+   * [Generating RapidFTR Installers](web/generating-installers.md)
+   * [Generating RapidREG installers](web/generating_rapidreg_installers.md)
    * [Linux NetBook](web/linux-netbook.md)
    * [Windows NetBook](web/windows-netbook.md)
 * Upgrading
